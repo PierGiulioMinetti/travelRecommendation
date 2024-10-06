@@ -22,6 +22,35 @@
 /* 
  Utilities
 */
+
+.d-flex{
+    display: flex;
+}
+
+.justify-evenly{
+    justify-content: space-evenly;
+}
+
+.gap-1{
+    gap: 1rem
+}
+
+.gap-2{
+    gap: 2rem
+}
+
+.gap-3{
+    gap: 3rem
+}
+
+.gap-4{
+    gap: 4rem
+}
+
+.gap-5{
+    gap: 5rem
+}
+
 .text-white{
     color: black;
 }
@@ -215,7 +244,7 @@ input[type=text]:focus {
 
 #box-description{
     /* border: 3px solid white; */
-    padding: 3rem;
+    /* padding: 3rem; */
 }
 
 #box-description>div>ul>li{
@@ -240,3 +269,34 @@ input[type=text]:focus {
 #box-description-2{
     width: 300px;
 }
+
+
+/* ---about page---------------- */
+#box-description-2-about-page{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#team-container-about-page{
+    padding: 2rem;
+    display: flex;
+    gap: 5rem;
+}
+
+#team-title-about-page{
+    font-size: 50px;
+}
+
+#team-content-about-page{
+    margin-left: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-about-page{
+    background-color: #ffffff88;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
