@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="travel_raccomandation.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="travel_raccomandation.css">
-    <title>Travel Raccomandation Home</title>
+    <title>Contact Us</title>
 </head>
 
 <body>
@@ -45,37 +45,15 @@
             </ul>
         </div>
         <!-- section 2 -->
-        <div id="navbar-section-3">
-            <!-- section 3 -->
-            <!-- navbar -->
-            <!-- <div> -->
-            <input type="text" id="search-bar" placeholder="Enter a destination or keyword">
-            <!-- icon -->
-
-            <div class="btn-container">
-                <!-- button1 -->
-                <button id="searchBtn" class="button text-white">
-                    Search
-                </button>
-                <!-- button2 -->
-                <button onclick="document.getElementById('search-bar').value = ''" style="position:relative; z-index:3"
-                    id="clearBtn" class="button text-white">
-                    Clear
-                </button>
-            </div>
-            <!-- </div> -->
-            <!-- navbar -->
-            <!-- section 3 -->
-        </div>
     </div>
     <!-- NAVBAR -->
 
     <!-- HOME SECTION -->
     <div>
         <div class="home-background-container">
-            <p id="error-message" class="text-align-right pr-2 pt-1 color-error transp-background">
-                <!-- Please enter a valid search query -->
-            </p>
+            <!-- <p class="text-align-right pr-2 pt-1 color-error">
+                Please enter a valid search query
+            </p> -->
             <div id="layer">
             </div>
             <!-- container both boxes -->
@@ -112,50 +90,53 @@
                     </div>
                 </div>
                 <!-- box 2 - description-->
-                <div id="box-description">
+                <div id="box-description" class="box-description-contact-us-page d-flex">
                     <!-- box-description-1 -->
-                    <div>
+                    <div id="box-description-1-conctact-page" class="mt-5">
                         <ul>
                             <li>
-                                EXPLORE
-                            </li>
-                            <li>
-                                DREAM
-                            </li>
-                            <li>
-                                DESTINATION
+                                CONCTACT US
                             </li>
                         </ul>
+                        <div class="mt-2">
+                            <small>
+                                Get in touch
+                            </small>
+                        </div>
                     </div>
-                    <!-- box-description-2 -->
-                    <p id="box-description-2" class="mt-3">
-                        It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes,
-                        while pursuing the desired destination that captivates the heart and ignites a sense of wonder
-                    </p>
-                    <div class="mt-3">
-                        <button class="button z-index-2">
-                            BOOK NOW
-                        </button>
+                    <!-- box-description-2 - FORM -->
+                    <div id="box-form-2-conctact-page" class="z-index-2 mt-2">
+                        <form>
+                            <div>
+                                Name
+                                <br>
+                                <input type="text" name="name">
+                            </div>
+                            <div>
+                                Email
+                                <br>
+                                <input type="email" name="email">
+                            </div>
+                            <div>
+                                Message
+                                <br>
+                                <textarea name="message" rows="4" cols="50" placeholder="Describe yourself here...">
+                                </textarea>
+                            </div>
+                            <br>
+                            <button class="button" type="button">
+                                Submit
+                            </button>
+                        </form>
                     </div>
-                </div>
-                <!-- RESULT SEARCHED SECTION -->
-                <div id="result-search-container">
-                    <h1 id="title">
-                        
-                    </h1>
-                    <p id="description">
-                        
-                    </p>
-                    <div id="img-container">
-                        <img src="" alt="">
-                    </div>
+
                 </div>
             </div>
         </div>
     </div>
     </div>
+    <!-- HOME SECTION -->
 
-    <script src="./travel_recommendation.js"></script>
 </body>
 
 </html>

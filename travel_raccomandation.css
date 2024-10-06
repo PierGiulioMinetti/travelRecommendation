@@ -23,6 +23,7 @@
  Utilities
 */
 
+
 .d-flex{
     display: flex;
 }
@@ -298,5 +299,51 @@ input[type=text]:focus {
     background-color: #ffffff88;
     padding: 1rem;
     border-radius: 15px;
+}
+
+/* -------- conctact us page */
+.box-description-contact-us-page{
+    /* border: 2px solid red; */
+}
+
+#box-description-1-conctact-page{
+    /* border: 2px solid purple */
+}
+
+#box-form-2-conctact-page{
+    padding: 1rem;
+    /* border: 2px solid orange; */
+    background-color: rgba(107, 107, 107, 0.244);
+    margin-left: 200px;
+    border-radius: 10px;
+}
+
+#box-form-2-conctact-page>form>div>input, #box-form-2-conctact-page>form>div>textarea{
+    border-radius: 5px;
+    width: 500px;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+#result-search-container{
+    /* border: 3px solid red; */
+}
+
+.result-search-container{
+    width: 600px;
+    height: 600px;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: #ffffff87;
+    overflow-y: scroll;
+    position: relative;
+    z-index: 2;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 80px;
+    margin-left: 150px;
+}
+
+.img-destination{
+    width: 500px;
 }
 
