@@ -188,7 +188,7 @@ input[type=text]:focus {
 .home-background-container{
     position: relative;
     height: 100vh;
-    background-image: url('./japan-background.jpg');
+    background-image: url('./images/japan-background.jpg');
     background-size: cover;
     background-position: top;
 }
