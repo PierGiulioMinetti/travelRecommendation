@@ -26,7 +26,7 @@ searchBtn.addEventListener("click", (event) => {
 			const { beaches, temples, countries } = resp;
 
 			// Check for the user submission
-			if (searchedWord === "beaches") {
+			if (searchedWord.toLowerCase() === "beaches") {
 				console.log("search beaches", beaches);
 				resultContainer.innerHTML = "";
 
@@ -47,7 +47,7 @@ searchBtn.addEventListener("click", (event) => {
 					resultContainer.classList.add("result-search-container");
 					errorMessage.innerText = "";
 				}
-			} else if (searchedWord === "temples") {
+			} else if (searchedWord.toLowerCase() === "temples") {
 				console.log("search temples", temples);
 				if (temples) {
 					temples.forEach((element) => {
@@ -66,7 +66,7 @@ searchBtn.addEventListener("click", (event) => {
 					resultContainer.classList.add("result-search-container");
 					errorMessage.innerText = "";
 				}
-			} else if (searchedWord === "countries") {
+			} else if (searchedWord.toLowerCase() === "countries") {
 				console.log("countries", countries);
 
 				countries.forEach((element) => {
