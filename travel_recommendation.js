@@ -18,6 +18,7 @@ searchBtn.addEventListener("click", (event) => {
 
 	const searchedWord = searchInput.value;
 	console.log("searchedWord", searchedWord);
+	resultContainer.innerHTML = "";
 
 	fetch("./travel_recommendation_api.json")
 		.then((res) => res.json())
@@ -74,8 +75,11 @@ searchBtn.addEventListener("click", (event) => {
 							<h1 id="title" class="mt-3">
 							   ${element.name}
 							</h1>
+							<h3>
+								${city.name}
+							</h3>
 							<p id="description">
-							   ${city.description}
+							    ${city.description}
 						   </p>
 						   <div id="img-container">
 							   <img class="img-destination" src="${city.imageUrl}" alt="">

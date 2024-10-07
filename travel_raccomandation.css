@@ -88,6 +88,46 @@
     padding-top: 5rem;
 }
 
+.pb-1{
+    padding-bottom: 1rem;
+}
+
+.pb-2{
+    padding-bottom: 2rem;
+}
+
+.pb-3{
+    padding-bottom: 3rem;
+}
+
+.pb-4{
+    padding-bottom: 4rem;
+}
+
+.pb-5{
+    padding-bottom: 5rem;
+}
+
+.px-1{
+    padding: 1rem 0;
+}
+
+.px-2{
+    padding: 2rem 0;
+}
+
+.px-3{
+    padding: 3rem 0;
+}
+
+.px-4{
+    padding: 4rem 0;
+}
+
+.px-5{
+    padding: 5rem 0;
+}
+
 .mt-1{
     margin-top: 1rem;
 }
@@ -125,7 +165,7 @@
 .button{
     background-color: var(--background);
     padding: 0.7rem 1rem;
-    margin: 0 0.5rem;
+    margin: 1rem 0.5rem;
     border-radius: 10px;
     border: none;
 }
@@ -272,7 +312,7 @@ input[type=text]:focus {
 }
 
 
-/* ---about page---------------- */
+/* ---about us page---------------- */
 #box-description-2-about-page{
     font-family:Arial, Helvetica, sans-serif;
     font-weight: 500;
@@ -299,6 +339,7 @@ input[type=text]:focus {
     background-color: #ffffff88;
     padding: 1rem;
     border-radius: 15px;
+    width: 250px;
 }
 
 /* -------- conctact us page */
@@ -332,7 +373,7 @@ input[type=text]:focus {
 .result-search-container{
     width: 600px;
     height: 600px;
-    padding: 2rem;
+    padding: 1rem 1rem 2rem 1rem;
     border-radius: 10px;
     background-color: #ffffff87;
     overflow-y: scroll;
