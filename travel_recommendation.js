@@ -27,7 +27,7 @@ searchBtn.addEventListener("click", (event) => {
 			// Check for the user submission
 			if (searchedWord === "beaches") {
 				console.log("search beaches", beaches);
-				resultContainer.innerHTML = '';
+				resultContainer.innerHTML = "";
 
 				if (beaches) {
 					beaches.forEach((element) => {
@@ -66,25 +66,27 @@ searchBtn.addEventListener("click", (event) => {
 					errorMessage.innerText = "";
 				}
 			} else if (searchedWord === "countries") {
-				console.log('countries', countries);
-				
+				console.log("countries", countries);
+
 				countries.forEach((element) => {
-					resultContainer.innerHTML += `
-					 <h1 id="title" class="mt-3">
-						${element.name}
-					 </h1>
-					 <p id="description">
-						${element.description}
-					</p>
-					<div id="img-container">
-						<img class="img-destination" src="${element.imageUrl}" alt="">
-					</div>
-					`;
+					element.cities.forEach((city) => {
+						resultContainer.innerHTML += `
+							<h1 id="title" class="mt-3">
+							   ${element.name}
+							</h1>
+							<p id="description">
+							   ${city.description}
+						   </p>
+						   <div id="img-container">
+							   <img class="img-destination" src="${city.imageUrl}" alt="">
+						   </div>
+						   `;
+					})
 				});
 				resultContainer.classList.add("result-search-container");
 				errorMessage.innerText = "";
 			} else {
-				resultContainer.innerHTML = '';
+				resultContainer.innerHTML = "";
 				errorMessage.innerText =
 					"Please enter a valid search query. Ex: countries, temple, beaches";
 			}
@@ -98,6 +100,6 @@ searchBtn.addEventListener("click", (event) => {
 
 clearBtn.addEventListener("click", () => {
 	resultContainer.classList.remove("result-search-container");
-	resultContainer.innerHTML = '';
+	resultContainer.innerHTML = "";
 	errorMessage.innerText = "";
-})
+});
